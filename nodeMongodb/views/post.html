@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.87.0">
+    <title>学生信息管理</title>
+
+
+    
+
+    <!-- Bootstrap core CSS -->
+<!-- <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" > -->
+<link href="/public/css/bootstrap.min.css" rel="stylesheet" >
+
+    <!-- Custom styles for this template -->
+  </head>
+  <body>
+    
+<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">学生信息管理</a>
+  <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+</header>
+
+  <div class="row">
+    <main>
+      <h2>添加学生</h2>
+      <a class="btn btn-primary" href="/">返回</a>
+      <form action="/students/new" method="post">
+          <div  class="mb-3">
+              <label class="col-sm-2 col-form-label">姓名：</label>
+              <input  class="form-control" type="text" name="name" required>
+          </div>
+          <div>
+              <label class="orm-label">性别：</label>
+              <label  for="nan">男:</label>
+              <input class="form-check-input" id="nan" type="radio" name="sex" value="1" required>
+              <label  for="nv">女:</label>
+              <input class="form-check-input" id="nv" type="radio"  name="sex" value="2" >
+          </div>
+          <div>
+              <label class="col-sm-2 col-form-label">年龄：</label>
+              <input  class="form-control" type="text" name="age" required>
+          </div>
+          <button class="btn btn-success" type="submit">确定</button>
+      </form>
+    </main>
+  </div>
+  </body>
+</html>
